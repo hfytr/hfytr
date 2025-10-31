@@ -1,0 +1,92 @@
+\documentclass[10pt]{resume}
+
+\name{Archim Jhunjhunwala}
+\usepackage{enumitem}
+
+\address{22 Beacon Heights Dr.\\ Newton, Massachusetts 02459}
+\address{(857)~$\cdot$~636~$\cdot$~0914 \\ archimj@proton.me \\ github.com/hfytr }
+\newenvironment{rlist}{
+  \begin{itemize}{\leftmargin=0em}
+  \itemsep -0.5em \vspace{-0.5em}
+  }{\end{itemize}}
+\newenvironment{rindentList}{\begin{rlist}}{}
+
+\begin{document}
+
+\begin{rSection}{Education}
+    \textbf{Homeschool GPA: 3.9} \\
+    \textbf{AP Courses}
+    \begin{rlist}
+        \item Calculus BC, Computer Science A, Statistics
+        \item Physics C Mechanics, Physics C E\&M, Chemistry
+    \end{rlist}
+    \textbf{Undergraduate and Graduate Classes}
+    \begin{rlist}
+        \item Real Analysis, Compilers, Operating Systems (ongoing),
+            Differential Equations (ongoing), Discrete Mathematics, Linear /
+            Integer Programming, Linear Algebra 
+    \end{rlist}
+\end{rSection}
+
+\begin{rSection}{Research Projects}
+    \textbf{AC Optimal Power Flow} \hfill \textit{June 2025 - Present} \\
+    \textit{Shin Group, MIT Chemical Engineering} \\
+    Part of a group developing algorithms to solve Alternating Current Optimal
+    Power Flow (ACOPF) problems on international grid scale. ACOPF problems
+    face real world issues like downage of power-lines, and mathematical ones
+    such as non-convexity and non-linearity. Culminated in presentation to
+    group, as well as HIP-SAT symposium.
+    \begin{rlist}
+        \item Leveraged and contributed to ExaModels.jl, a GPU based NLP solver
+            utilizing KKT methods.
+        \item Contributed to security constrained, multi-period, and static
+            ACOPF formulations.
+        \item Independantly developed ExaPowerIO.jl, a tool for data parsing
+            40x faster than alternatives. Data previously represented up to
+            70\% of problem runtime.
+    \end{rlist}
+
+    \textbf{Political Districting} \hfill \textit{June 2024 - November 2024}\\ 
+    \textit{Sankarnarayanan Group, University of Colorado, Boulder} \\
+    Created optimally unbiased political districts using a combination of Mixed
+    Integer Linear Programming, and Simulated Annealing. Also devised metrics
+    to accurately measure compactness / fairness of political districts, an
+    inherently subjective trait.
+    \begin{rlist}
+        \item Created ML models to estimate compactness / fairness of political
+            districts using Neural Networks, and various other regression
+            techniques.
+        \item Wrote a performant, customized Simulated Annealer from scratch in
+            order to search the space of possible districting plans.
+        \item Used MILP as a projection operator to ensure feasability of
+            generated districts.
+    \end{rlist}
+\end{rSection}
+
+\begin{rSection}{Toy Projects}
+    These are smaller projects taken on purely for learning purposes. They are
+    done in my spare time over a period of 1-6 months (although some are
+    longer).
+    \begin{rlist}
+        \item An LSP for Julia (ongoing), including a compile-time LALR(1)
+            parser generator and regex engine.
+        \item Various contributions to the Wideriver tiling window manager.
+        \item A lightweight, terminal-based, reading interface for the website
+            Royal Road. I use this daily.
+        \item Feed forward neural network from scratch. Got 95\% accuracy on
+            MNIST.
+        \item A negamax chess engine rated 2500 elo based on play with other
+            engines.
+        \item A CPU ray tracer supporting .obj files.
+        \item Participated in various hackathons. Won \$2000 total.
+    \end{rlist}
+\end{rSection}
+
+\begin{rSection}{Technical Skills}
+    \begin{itemize}[leftmargin=*]
+        \item Rust, C, Julia, C++, Haskell, Python
+        \item Functional Analysis, Mixed Integer Linear Programming, Non-Linear
+        Programming, GPU Based Optimization
+    \end{itemize}
+\end{rSection}
+\end{document}
